@@ -1,0 +1,93 @@
+#title {
+    margin-top: 15%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.main-table {
+    margin: 0 auto;
+}
+
+.messageName, .messageConsent, .messageSelect {
+    color: red;
+    font-weight: 600;
+}
+
+.messageSent, .messageUpdate {
+    color: green;
+    font-weight: 800;
+}
+
+#name {
+    padding-left: 15px;
+    text-align: left;
+}
+
+#button {
+    background-color: #4EBBB5;
+    border: none;
+    border-radius: 5px;
+    min-height: 40px;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Merriweather';
+}
+
+input[type="checkbox"] {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+input[type="text"],
+select {
+    background-color: #EFF0F1;
+    border: none;
+    font-size: .9em;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+}
+
+    input:focus, select:focus {
+        border: 2px solid #2D3945;
+        outline: none;
+    }
+
+/****** WEBKIT/INPUT FIELDS *******/
+/******                     *******/
+
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-size: 13px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+    font-size: 13px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    font-style: italic;
+    font-size: 13px;
+}
+
+:-ms-input-placeholder {
+    font-style: italic;
+    font-size: 13px;
+}

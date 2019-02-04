@@ -1,0 +1,43 @@
+﻿@page
+@model PersonDb.Pages.IndexModel
+
+<div class="content">
+    <form id="form1">
+        <p id="title">Please enter your name and pick the Sectors you are currently involved in.</p>
+        <table class="main-table">
+            <tr>
+                <td>
+                    <label>Name:</label>
+                    <input placeholder="Name" class="btn" type="text" id="name">
+                    <p class="messageName">Name field can't be empty.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Sectors:</label>
+                    <select class="select" id="my_select" multiple size="5">
+                        @for (int i = 0; i < Model.Fields.Count; i++)
+                        {
+                            <option class="@i" id="@Model.Fields[i].Id">@Model.Fields[i].FieldName</option>
+                        }
+                    </select>
+                    <p class="messageSelect">At least one field must be selected.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" class="check" id="checkBox">
+                    <label>Agree to terms</label>
+                    <p class="messageConsent">Terms must be agreed</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Save" class="submit" id="button" />
+                    <p class="messageSent">Data inserted successfully</p>
+                    <p class="messageUpdate">Data updated successfully</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
