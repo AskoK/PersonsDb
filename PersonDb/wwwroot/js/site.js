@@ -1,8 +1,7 @@
-﻿var res = [];
-var last = {};
+﻿var response = [];
+var lastInsert = {};
 var lastId = " ";
 var id = "";
-var return_first;
 var count = 0;
 
 function callBackData() {
@@ -12,9 +11,9 @@ function callBackData() {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (item) {
-            res.push.apply(res, item);
-            last = res.pop()
-            lastId = last.id.toString();
+            response.push.apply(response, item);
+            lastInsert = response.pop()
+            lastId = lastInsert.id.toString();
             id = lastId;
         },
         error: function () {
